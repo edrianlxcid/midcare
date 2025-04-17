@@ -10,13 +10,15 @@ body{
     font-family: "Special Gothic", 'Times New Roman', Times, serif;
     font-size: 16px;
 }
-header{
+.header-1{
     width: 100%;
-    max-width: 1000px;
+    height: 300px;
     margin: auto;
+    background: url('../recursos/fonfo.jpg');
     overflow: hidden;
-    background: url('../recursos/fonfo.jpg') repeat;
-    background-position: center 0;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .header .bienvenida{
@@ -28,6 +30,31 @@ header{
     margin: 40px;
     margin-top: 75px;
 }
+
+.contenedor .menu{
+    width: 100%;
+    text-align: center;
+
+}
+
+.contenedor .menu a{
+    text-decoration: none;
+    color: rgb(47, 21, 92);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.contenedor .menu a:hover{
+    background: #fff;
+    color: #0b1112;
+    transition: 0.5s;
+}
+
+
+
 
 
 

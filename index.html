@@ -10,7 +10,7 @@
     <title>MindCare Centro Psicoterapéutico</title>
 </head>
 <body class="body">
-    <header>
+    <header class="header-1">
         <header class="header">
             <section class="contenedor">
                 <div class="menu">
@@ -22,7 +22,7 @@
                 </div>
             </section>
             <section class="bienvenida">      
-                    <img src="recursos/logo.png" alt="logo" class="logo" max-width="220px" height="220'x">
+                    <img src="recursos/logo.png" alt="logo" class="logo" max-width="220px" height="220px">
                     <div class="bienvenida-texto">
                         <h1 class="titulo">MinDCare</h1>
                         <p class="prono">Cuidar de la salud mental es tan importante como cuidar del cuerpo; ambos son esenciales para vivir una vida plena y equilibrada.</p>
@@ -82,5 +82,19 @@
             </div>
         </section>
     </main>
+    <!--Crearemos una sección de formulario-->
+    <section id="cita">
+        <h2>Agendar Tu Cita</h2>
+        <!--Agregamos una lista-->
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            <br>
+            <label for="numero">Numero Telefonico</label>
+            <input type="tel" id="numero" placeholder="Ingrese su número de teléfono" required>
+            <br>
+            <button type="submit" class="btn-submit">Enviar Cuestionario</button>
+        </form>
+      </section>
 </body>
 </html>
