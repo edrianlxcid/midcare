@@ -11,90 +11,52 @@
 </head>
 <body class="body">
     <header class="header-1">
-        <header class="header">
-            <section class="contenedor">
-                <div class="menu">
-                    <a href="" class="inicio">Inicio</a>
-                    <a href="" class="nosotros">Nosotros</a>
-                    <a href="" class="cita">Agenda tu cita</a>
-                    <a href="" class="servicios">Servicios</a>
-                    <a href="" class="contactanos">Contáctanos</a>
-                </div>
-            </section>
-            <section class="bienvenida">      
-                    <img src="recursos/logo.png" alt="logo" class="logo" max-width="220px" height="220px">
-                    <div class="bienvenida-texto">
-                        <h1 class="titulo">MinDCare</h1>
-                        <p class="prono">Cuidar de la salud mental es tan importante como cuidar del cuerpo; ambos son esenciales para vivir una vida plena y equilibrada.</p>
-                    </div>  
-            </section>
-        </header>
+        <section class="contenedor">
+            <div class="menu">
+             <a href="" class="inicio">Inicio</a>
+             <a href="" class="nosotros">Nosotros</a>
+             <a href="" class="cita">Agenda tu cita</a>
+             <a href="" class="servicios">Servicios</a>
+             <a href="" class="contactanos">Contáctanos</a>
+            </div>
+        </section>
+        <section class="bienvenida">      
+            <div class="bienvenida-texto">
+                 <h1 class="titulo">MinDCare</h1>
+                 <p class="prono">Cuidar de la salud mental es tan importante como cuidar del cuerpo<br> 
+                 ambos son esenciales para vivir una vida plena y equilibrada.</p>
+            </div>  
+         </section>
     </header>
     <main class="main">
         <section class="productos">
-            <div class="titulo-productos">
-                <h2>Servicios Psicológicos</h2>
-            </div>
-                <div class="titulo-servicios">
-                    <h3>Psicología Clínica</h3>
-                    <p>Descripción de clínica</p>
-                    <h3>Psicología Infantil y Psicorrehabilitación</h3>
-                    <p>Descripción Psicoinfa</p>
-                    <h3>Terapia del Lenguaje</h3>
-                    <p>Descripción TL</p>
+            <div class="titulo-servicios">
+                <div class="caja">
+                <h3 class="clinica">Psicología Clínica</h3>
+                <img src="recursos/psiclinica.jpg" alt="clinica" class="img_servicios">
+                <p class="descrip">Es una rama de la psicología que se dedica al estudio, diagnóstico y tratamiento de problemas emocionales, conductuales y psicológicos. 
+                     Combina el rigor de la investigación científica con un enfoque humanista, ofreciendo apoyo personalizado a quienes enfrentan desafíos como la ansiedad, 
+                    la depresión, los trastornos de la personalidad y más.
+                </p>
                 </div>
-        </section>
-        <section class="profesionales">
-            <div class="titulo-profesionales">
-                <h2>Profesionales</h2>
-            </div>
-            <article class="contenedor">
-                <div class="info-profe">
-                    <h3 class="nombre-prof">Nombre Prof</h3>
-                    <p class="grado">Título</p>
-                    <h3 class="nombre-prof">Nombre Prof</h3>
-                    <p class="grado">Título</p>
-                    <h3 class="nombre-prof">Nombre Prof</h3>
-                    <p class="grado">Título</p>
+                <div class="caja">
+                    <h3 class="clinica">Psicología Infantil y Psicorrehabilitación</h3>
+                    <img src="recursos/psiinfantil.jpg" alt="infantil" class="img_servicios">
+                    <p class="descrip">A través de la observación y el análisis, los psicólogos infantiles identifican dificultades como problemas de aprendizaje, 
+                        trastornos de conducta y emociones, ayudando a los pequeños a superar obstáculos y desarrollar habilidades esenciales para su crecimiento. 
+                        Trabajan de cerca con familias y educadores para crear entornos que fomenten el bienestar y el desarrollo saludable.
+                    </p>
                 </div>
-            </article>
-        </section>
-        <section class="vision">
-            <div class="contenedor">
-                <h2>Visión</h2>
-                <p>Historia del Centro</p>
-            </div>
-        </section>
-        <section class="Ubicación">
-            <div class="contenedor-ubicacion">
-                <h2 class="titulo">Ubicación</h2>
-                <div class="detalles-ubi">
-                    <p class="ciudad">Ciudad</p>
-                    <p class="sector">Sector</p>
-                    <p class="calle">Calle</p>
-                    <link rel="stylesheet" href="mapa_ubicacion">
-                </div>
-                <div class="atencion">
-                    <h3 class="titulo-atencion">Horarios de Atención</h3>
-                    <p class="entre-semana">Entre semana</p>
-                    <p class="fin-semana">Fines de semana</p>
+                    <div class="caja">
+                    <h3 class="clinica">Terapia del Lenguaje</h3>
+                    <img src="recursos/teratl.jpg" alt="tl" class="img_servicios">
+                    <p class="descrip"> Los terapeutas trabajan con personas de todas las edades, ayudándoles a desarrollar habilidades 
+                        esenciales para expresarse de manera efectiva. Desde niños con retrasos en el habla hasta adultos que han sufrido lesiones o condiciones médicas, 
+                        la terapia del lenguaje es una herramienta fundamental para mejorar la calidad de vida y la interacción social.
+                    </p>
                 </div>
             </div>
+        <div>
+    </main>            
         </section>
-    </main>
-    <!--Crearemos una sección de formulario-->
-    <section id="cita">
-        <h2>Agendar Tu Cita</h2>
-        <!--Agregamos una lista-->
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-            <br>
-            <label for="numero">Numero Telefonico</label>
-            <input type="tel" id="numero" placeholder="Ingrese su número de teléfono" required>
-            <br>
-            <button type="submit" class="btn-submit">Enviar Cuestionario</button>
-        </form>
-      </section>
-</body>
-</html>
+        
