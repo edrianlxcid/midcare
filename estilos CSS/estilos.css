@@ -1,167 +1,455 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
   /* Estilos para el header */
 
 body{
-    font-family: "Special Gothic", 'Times New Roman', Times, serif;
-    font-size: 16px;
-  }
+  font-family: "Special Gothic", 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
 .header-1 {
-    justify-content: center; /* Centra los elementos verticalmente */
-    background: url('../recursos/fonfo.jpg') no-repeat center center/cover; /* Fondo ajustado */
-    height: 300px; /* Ocupa toda la altura de la pantalla */
-  }
+  justify-content: center; /* Centra los elementos verticalmente */
+  background: url('../recursos/fondo2.jpg') no-repeat center center/cover; /* Fondo ajustado */
+  height: 400px; /* Ocupa toda la altura de la pantalla */
+  background-attachment: fixed;
+}
   
   /* Navegación - Menu */
 .menu {
-    display: flex;
-    justify-content: center; /* Centra los enlaces */
-    gap: 10px; /* Espacio entre los enlaces */
-    margin: 0; /* Margen superior e inferior */
-  }
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  gap: 10px; /* Espacio entre los enlaces */
+  margin: 0; /* Margen superior e inferior */
+}
   
 .menu a {
-    text-decoration: none;
-    color: #fff; /* Texto blanco */
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    transition: all 0.3s ease; /* Transición suave para hover */
-  }
+  text-decoration: none;
+  color: #fff; /* Texto blanco */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(0, 0, 0, 0.572); /* Fondo semi-transparente */
+  transition: all 0.3s ease; /* Transición suave para hover */
+}
   
 .menu a:hover {
-    background-color: #fff; /* Fondo blanco al pasar el mouse */
-    color: #000; /* Texto negro */
-  }
+  background-color: #fff; /* Fondo blanco al pasar el mouse */
+  color: #000; /* Texto negro */
+}
   
   /* Bienvenida */
 .bienvenida{
-    width: auto;
-    height: 215px;
-    background: url('../recursos/logo.png') no-repeat 220px;
-    background-position: left 50px bottom 20px; /* 50px desde el borde izquierdo y 20px desde el borde inferior */
-    
-}    
+  width: 100%;
+  height: 300px;
+  padding: 60px;
+  margin-right: 40px;  
+  margin-top: 10px;
+  margin-right: 40px; 
+}
 
 .bienvenida-texto{
- text-align:right;
- margin-right: 403px;
- margin-top: 60px;
- font-style: italic;
- color: #f1e7ff;
+  width: 80%;
 }
 
 
-  
-.titulo {
-    font-size: 70px; /* Tamaño destacado para el título */
-    font-weight: bold;
-    margin-bottom: 10px; /* Separación del título y descripción */
+.titulo{
+ font-size: 60px;
+ text-decoration: none;
+ color: #fff; /* Texto blanco */
+ background-color: rgba(0, 0, 0, 0.891);
+ transition: all 0.3s ease; /* Transición suave para hover */
+ border-radius: 8px;
 }
-  
-.prono {
-    font-size: 19px; /* Ajusta el tamaño del texto descriptivo */
-    line-height: 1.5; /* Mejora la legibilidad del texto */
-    color: #f1e7ff; /* Cambia el color del texto si es necesario */
-    font-weight: bold;
-  }
+
+.titulo:hover{
+  background-color: #fff; /* Fondo blanco al pasar el mouse */
+  color: #000; /* Texto negro */
+}
+
+.centro{
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(255, 251, 251, 0.663);
+  text-decoration: none;
+  color: #000000; /* Texto blanco */
+  transition: all 0.3s ease;
+}
+
+.centro:hover{
+  background-color: #000000bb; /* Fondo blanco al pasar el mouse */
+  color: #ffffff; 
+}
+
 
 
 /*inicio del main-->*/
 /* Estilos para el contenedor general */
 .main {
-    display: flex; /* Activamos Flexbox */
-    justify-content: center; /* Centramos las cajas horizontalmente */
-    align-items: center; /* Alineamos las cajas verticalmente si es necesario */
-    background-color: #dbb4f3;
-  }
+  display: block; /* Activamos Flexbox */
+  justify-content: center; /* Centramos las cajas horizontalmente */
+  align-items: center; /* Alineamos las cajas verticalmente si es necesario */
+  background: url('../recursos/fondo3.jpg');
+  background-attachment: fixed;
+}
   
 .productos {
-    max-width: 100%; /* Ancho total del contenedor */
-    margin: 0 auto; /* Centramos el contenedor */
-  }
+  max-width: 100%; /* Ancho total del contenedor */
+  margin: 0 auto; /* Centramos el contenedor */
+}
   
   /* Estilos para las cajas dentro de título-servicios */
 .titulo-servicios {
-    display: flex; /* Alinear las cajas horizontalmente */
-    justify-content: space-between; /* Espaciado entre las cajas */
-    flex-wrap: wrap; /* Ajustar cajas si hay más contenido */
-  }
+  display: flex; /* Alinear las cajas horizontalmente */
+  justify-content: center; /* Espaciado entre las cajas */
+  align-items: center;
+  gap: 50px;
+  flex-wrap: nowrap; /* Ajustar cajas si hay más contenido */
+}
 
 .img_servicios{
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
   
 .caja {
-    flex: 1; /* Hacer que cada caja ocupe espacio equitativo */
-    padding: 40px; /* Espaciado interno */
-    margin: 10px; /* Separación externa entre cajas */
-    text-align: center; /* Centrar texto dentro de la caja */
-    border: 5px solid #ccc; /* Bordes */
-    border-radius: 30px;
-    position: relative; /* Permite posicionar el pseudo-elemento dentro de la caja */
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    opacity: 0.8;
-    transition: all 0.3s ease;
-    z-index: 1; /* Asegura que el contenido esté encima del fondo */
-  }
+  width: 500px;
+  height: 600px;
+  padding: 40px; /* Espaciado interno */
+  margin: 10px; /* Separación externa entre cajas */
+  text-align: center; /* Centrar texto dentro de la caja */
+  border: 5px solid #ccc; /* Bordes */
+  border-radius: 30px;
+  position: relative; /* Permite posicionar el pseudo-elemento dentro de la caja */
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 1; /* Asegura que el contenido esté encima del fondo */
+  overflow: hidden;
+}
   
-.caja:hover{
-    opacity: 1;
-    transform: scale(1.05);
-    box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.3);
+.caja:hover{  
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.3);
 } 
 .caja::before {
-    content: ""; /* Necesario para los pseudo-elementos */
-    position: absolute; /* Posiciona el pseudo-elemento dentro de la caja */
-    top: 0;
-    left: 0;
-    width: 100%; /* Hace que cubra toda la caja */
-    height: 100%;
-    border-radius: 30px; /* Coincide con el borde de la caja */
-    background-image: url(../recursos/texturacaja3.jpg); /* Imagen de fondo */
-    filter: blur(20px); /* Aplica el desenfoque */
-    z-index: -1; /* Envía el fondo detrás del contenido */
-  }
+  content: ""; /* Necesario para los pseudo-elementos */
+  position: absolute; /* Posiciona el pseudo-elemento dentro de la caja */
+  top: 0;
+  left: 0;
+  width: 100%; /* Hace que cubra toda la caja */
+  height: 100%;
+  border-radius: 30px; /* Coincide con el borde de la caja */
+  background-color: #f6f6f6c5;
+  filter: blur(20px); /* Aplica el desenfoque */
+  z-index: -1; /* Envía el fondo detrás del contenido */
+}
   
   /* Estilos para texto dentro de las cajas */
 .clinica {
-    margin: 10px;
-    font-size: 30px; /* Tamaño de título */
-    color: rgb(204, 205, 196);
-    font-weight: bold; /* Resaltar título */
-  }
+  margin: 10px;
+  font-size: 30px; /* Tamaño de título */
+  color: rgb(59, 59, 53);
+  font-weight: bold; /* Resaltar título */
+}
   
 .descrip {
-    margin-top: 25px;
-    font-size: 14px; /* Tamaño de descripción */
-    color: #f6e5e5; /* Color del texto de descripción */
-    font-weight: bold;
-    line-height: 1.5;
-  }
+  margin-top: 25px;
+  font-size: 14px; /* Tamaño de descripción */
+  color: #000000; /* Color del texto de descripción */
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* Fin de de la seccion productos */
+
+/* inicio de la seccion profesionales*/
+.profe {
+  background-size: cover;
+  padding: 50px 20px;
+  min-height: 100px;
+}
+
+/* Sección central */
+.tabla-profesionales {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 26px;
+}
+
+h2 {
+  text-align: center;
+  color: #1b1b1bb4;
+  margin-bottom: 20px;
+}
+
+/* Tabla responsive */
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+td{
+  font-size: 30px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+
+}
+
+th {
+  background-color: #000000bb;
+  color: white;
+  font-size: 1.1em;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Imágenes redondeadas */
+img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/*acerca de nostros*/
+
+/*fin acerca de nosotros*/
+
+/*Seccion para el formulario estilos*/
+
+#formulario {     
+  background-color: rgba(245, 245, 245, 0.81);     
+  padding: 20px;     
+  border-radius: 15px;     
+  max-width: 800px;     
+  width: 90%;       
+  margin: 30px auto;     
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 100; /* Asegura que se muestre por encima de otros elementos */
+}  
+
+/* Estilos específicos para el título dentro de la sección del formulario */ 
+#formulario h2 {     
+  color: #120b15ad;     
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+}  
+
+/* Estructura del formulario de dos columnas - solo afecta al formulario dentro de #formulario */
+#formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+#formulario .form-column {
+  width: 48%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#formulario .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Estilos para las etiquetas dentro del formulario */
+#formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c2430b2;
+  font-weight: 500;
+}
+
+/* Estilos exclusivos para los campos dentro de este formulario */ 
+#formulario input[type="text"], 
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario input[type="date"],
+#formulario input[type="time"] {     
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+  font-size: 16px;       
+  width: 100%;       
+  padding: 10px;     
+  margin: 5px 0;
+  display: block;     
+  border: 2px solid #675d66cd;     
+  border-radius: 5px;     
+  box-sizing: border-box;  
+}  
+
+#formulario input[type="text"]:focus, 
+#formulario input[type="email"]:focus,
+#formulario input[type="tel"]:focus,
+#formulario input[type="date"]:focus,
+#formulario input[type="time"]:focus {     
+  border-color: #c512bc;     
+  outline: none;
+  box-shadow: 0 0 5px rgba(197, 18, 188, 0.3);
+}
+
+#formulario br {
+  display: none;
+}
+
+/* Contenedor para el botón dentro del formulario */
+#formulario .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo para el botón de envío exclusivamente en este formulario */ 
+#formulario button[type="submit"] {     
+  background-color: #487473db;     
+  color: black;     
+  padding: 12px 30px;     
+  border: none;     
+  border-radius: 5px;     
+  cursor: pointer;     
+  font-weight: bold;     
+  transition: all 0.3s ease;
+  font-size: 16px;
+} 
+
+#formulario button[type="submit"]:hover {     
+  background-color: #6a5565;
+  transform: translateY(-2px);
+}
+
+#formulario button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/*--Ubicación---/
+/Contenedor principal*/
+.main .ubicacion{
+  padding: 60px; 
+  overflow: hidden;
+  
+}
+
+.main .ubicacion .titulo2{
+  text-align: center;
+  font-size: 40px; 
+  line-height: 40px;  
+  font-weight: 700; 
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* Columna izquierda: Dirección */
+.main .ubicacion .direccion{
+  float: left; 
+  width: 50%;   
+  text-align: left;  
+}
 
 
 
+/*  TÍTULOS (calle, sector y ciudad)*/
+.main .ubicacion .direccion p{
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* Estilo para los labels ( calle, sector y ciudad) */
+.main .ubicacion .direccion .titulo-dato{
+  font-weight: 700;  /* Negrita fuerte*/
+  color: #000;
+  display: inline-block;
+  width: 70px; /*Espacio fijo para la alineación*/
+}
+
+/*Estilos para la ciudad en mayúscula*/
+.main .ubicacion .direccion .ciudad{
+  text-transform: uppercase; /*QUITO*/
+  font-weight: 700; /*Negrita*/
+}
+ 
+/* aseguramos que los valores (S12-110, José peralta, Quito) no hereden negrita */
+.main .ubicacion .direccion .calle,
+.main .ubicacion .direccion .sector,
+.main .ubicacion .direccion .ciudad{
+  font-weight: 400; /*peso normal */
+}
 
 
 
+/*  columna derecha:  Horarios */
+.main .ubicacion .horarios{
+float: right;
+width: 50%;
+text-align: right;
+overflow: hidden;
+}
 
 
+/* Título Horarios */
+.main .ubicacion .horarios h4{
+text-align: center;
+margin-bottom: 20px;
+font-size: 1.5rem; 
+}
 
+/* 3 Bloques de horarios separados */
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana{
+width: 50%;
+float: left;
+text-align: center;
+margin-bottom: 15px; /*Espacio añadido entre bloques*/
+}
 
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20px;
+  padding-bottom: 30px;
 
+}
+/* Mapa */
+.contenedor-mapa{
+width: 50%;
+overflow: hidden;
 
+}
 
-
-
+.main .mapa iframe{
+width: 100%;
+max-height: 600px;
+border: 0; /*elimina borde por defecto*/
+}

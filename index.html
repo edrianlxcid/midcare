@@ -22,11 +22,11 @@
         </section>
         <section class="bienvenida">      
             <div class="bienvenida-texto">
-                 <h1 class="titulo">MinDCare</h1>
-                 <p class="prono">Cuidar de la salud mental es tan importante como cuidar del cuerpo<br> 
-                 ambos son esenciales para vivir una vida plena y equilibrada.</p>
+                 <h1 class="titulo">Min<span>DC</span>are<br>Centro Psicoterapéutico  </h1>
+                 <p class="centro">Cuidar de la salud mental es tan importante como cuidar del cuerpo<br> 
+                    ambos son esenciales para vivir una vida plena y equilibrada</p>
             </div>  
-         </section>
+        </section>
     </header>
     <main class="main">
         <section class="productos">
@@ -56,7 +56,113 @@
                     </p>
                 </div>
             </div>
-        <div>
-    </main>            
         </section>
+        <section class="profe">
+            <div class="tabla-profesionales">
+                <h2>Nuestros Profesionales</h2>
+                <div class="tabla-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                             <th>Profesionales</th>
+                             <th>Nombre y Apellido</th>
+                             <th>Especialidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                             <td><img src="recursos/psicologa.jpeg" alt="Psicóloga 1"></td>
+                             <td>Gisell Pida</td>
+                             <td>Psicóloga Clínica</td>
+                          </tr>
+                          <tr>
+                             <td><img src="recursos/psicologa2.jpg" alt="Psicóloga 2"></td>
+                             <td>Evelyn Cajamarca</td>
+                             <td>Psicóloga Infantil y Psicorrehabilitadora</td>
+                          </tr>
+                          <tr>
+                             <td><img src="recursos/psisologa3.jpg" alt="Psicóloga 3"></td>
+                             <td>Josselyn Cardenas</td>
+                             <td>Terapeuta del Lenguaje</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="formulario">
+            <h2>Agenda tu cita</h2>
+            <form action="">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                    </div>
+                </div>
+                
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="fecha">Seleccionar fecha</label>
+                        <input type="date" id="fecha" placeholder="Ingrese la fecha de su cita" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="genero">Género</label>
+                        <input type="text" id="genero" placeholder="Ingrese su género" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" placeholder="Ingrese la hora de su cita" required>
+                    </div>
+                </div>
+                
+                <div class="btn-container">
+                    <button type="submit" class="btn-submit">Solicitar cita</button>
+                </div>
+            </form>
+        </section>
+        <!--ubicacion-->
+        <!--Inicio de ubicacion-->
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo2">UBICACIÓN</h3>
+                <div class="direccion">
+                    <p><span class="titulo-dato">Calle: </span><span class="calle">S12-110 José peralta - Delfin triviño</span></p>
+                    <p><span class="titulo-dato">Sector: </span><span class="sector">El Recreo</span></p>
+                    <p><span class="titulo-dato">Ciudad: </span><span class="ciudad">Quito</span></p>
+                </div>
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a Viernes <br>7:00AM - 18:00PM</p>
+                    <p class="fin-semana">Sabados y Domingos <br>10:00AM - 20:00PM</p>
+                </div>
+            </div>
+        </section> <!--Fin Ubicación-->
+
+        <!--Inicio mapa-->
+        <section class="mapa">
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7769948736827!2d-78.52445582603153!3d-0.2607776353629744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598ff462a57a7%3A0x5ced458d0b047cbd!2sJose%20Peralta%20Y%20Delfin%20Trevino!5e0!3m2!1ses!2sec!4v1745101634867!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section> <!--Fin de la section mapa-->
+        <!--Fooder-->
+    </main>  
+    <footer >
+        <div class="contenedor">
+        <div class="copyright">
+            <p> &COPY; Todos los derechos reservados 200-2025</p>
+        </div>
+    </div>          
+</body>
         
