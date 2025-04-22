@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
   
   /* Estilos para el header */
 
@@ -124,7 +124,7 @@ body{
   
 .caja {
   width: 500px;
-  height: 600px;
+  height: auto;
   padding: 40px; /* Espaciado interno */
   margin: 10px; /* Separación externa entre cajas */
   text-align: center; /* Centrar texto dentro de la caja */
@@ -135,7 +135,6 @@ body{
   opacity: 0.8;
   transition: all 0.3s ease;
   z-index: 1; /* Asegura que el contenido esté encima del fondo */
-  overflow: hidden;
 }
   
 .caja:hover{  
@@ -173,6 +172,101 @@ body{
 }
 
 /* Fin de de la seccion productos */
+
+/*inicio de seccion sobre nosotros*/
+
+/* Contenedor principal */
+.sobre-n {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0f2f1; /* Borde sutil */
+  margin-top: 30px;
+}
+
+/* Título "Acerca de Mind Care" */
+.mind-care {
+  color: #202829db; /* Verde azulado  */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 600;
+}
+
+.mind-care::after {
+  content: ""; /*crea un elemento vacío*/
+  display: block;
+  width: 80px; /*Ancho de la línea*/
+  height: 3px; /*Grosor de la línea*/
+  background: #5d725eef; /* doy color verde */
+  margin: 15px auto 0; /*centrado y espacio arriba*/
+}
+
+/* Párrafos */
+.info-centro{
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.12rem;
+}
+
+/* Lista de especialidades */
+.proximamente {
+  padding-left: 25px;
+  margin: 25px 0;
+  columns: 1; /* Una columna para móvil */
+}
+
+.main .proximamente li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  list-style: none;
+  color: #444;
+  line-height: 1.6;
+  break-inside: avoid; /* Evita que los items se partan */
+}
+
+.main .proximamente li::before {
+  content: "•";
+  color: #64bcf8; /* Viñetas verdes */
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+/* Textos destacados */
+.main .info-centro strong {
+  color: #2a7377;
+  font-weight: 600;
+}
+
+ /*Filosofía (párrafo final)*/
+.main .final:last-of-type {
+  font-style: italic;
+  background: #f8fafc;
+  padding: 15px;
+  border-left: 4px solid #193f1ae6;
+  border-radius: 0 8px 8px 0;
+} 
+
+/* ----- media queris ----- */
+@media (min-width: 768px) {
+  .main .acerca-de article ul {
+      columns: 2; /* Dos columnas en pantallas grandes */
+      gap: 30px;
+  }
+  
+  .main .acerca-de article {
+      padding: 50px;
+  }
+}
+
+
+/*fin seccion de sobre nosotros*/
 
 /* inicio de la seccion profesionales*/
 .profe {
@@ -452,4 +546,118 @@ overflow: hidden;
 width: 100%;
 max-height: 600px;
 border: 0; /*elimina borde por defecto*/
+}
+
+/*media queris para el menu y servicios*/
+
+/* Estilos para pantallas de hasta 768px de ancho (Tablets y menos) */
+@media (max-width: 768px) {
+
+  .header-1 {
+    height: 300px; /* Reducimos un poco la altura del header */
+  }
+
+  .menu {
+    flex-wrap: wrap; /* Permite que los enlaces del menú se envuelvan si no caben */
+    gap: 5px; /* Reducimos un poco el espacio entre enlaces */
+    padding: 0 10px; /* Añadimos un poco de padding horizontal */
+  }
+
+  .menu a {
+    font-size: 16px; /* Reducimos un poco el tamaño de fuente del menú */
+    padding: 8px 8px; /* Ajustamos el padding del menú */
+  }
+
+  .bienvenida {
+    padding: 30px; /* Reducimos el padding de la sección bienvenida */
+    margin-right: 0; /* Eliminamos el margen derecho fijo */
+  }
+
+  .bienvenida-texto {
+    width: 95%; /* Aumentamos un poco el ancho para ocupar más espacio disponible */
+    margin: 0 auto; /* Centramos el texto */
+  }
+
+  .titulo {
+    font-size: 40px; /* Reducimos el tamaño del título principal */
+  }
+
+  .centro {
+    font-size: 18px; /* Reducimos un poco el tamaño del texto del centro */
+    text-align: center; /* Centramos el texto para pantallas más pequeñas */
+  }
+
+  .titulo-servicios {
+    flex-direction: column; /* Apila las cajas de servicio verticalmente */
+    gap: 20px; /* Reducimos el espacio entre las cajas apiladas */
+    padding: 20px; /* Añadimos padding al contenedor de servicios */
+  }
+
+  .caja {
+    width: 90%; /* Hacemos que las cajas ocupen casi todo el ancho */
+    height: auto; /* La altura se ajustará al contenido */
+    padding: 20px; /* Reducimos el padding interno de las cajas */
+    margin: 10px auto; /* Centramos las cajas apiladas y mantenemos margen vertical */
+  }
+
+  .img_servicios {
+    width: 200px; /* Reducimos el tamaño de la imagen */
+    height: 200px;
+  }
+
+  .clinica {
+    font-size: 24px; /* Reducimos el tamaño del título de la caja */
+  }
+
+  .descrip {
+    font-size: 14px; /* Mantenemos el tamaño de la descripción o lo ajustamos si es necesario */
+  }
+}
+
+/* Estilos para pantallas de hasta 600px de ancho (Teléfonos móviles) */
+@media (max-width: 600px) {
+
+  .header-1 {
+    height: 250px; /* Reducimos aún más la altura del header en móviles */
+  }
+
+  .menu a {
+     font-size: 14px; /* Reducimos más el tamaño de fuente del menú */
+     padding: 6px 6px; /* Ajustamos el padding */
+  }
+
+  .bienvenida {
+    padding: 20px; /* Reducimos más el padding de la bienvenida */
+  }
+
+  .bienvenida-texto {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .titulo {
+    font-size: 30px; /* Reducimos el tamaño del título principal para móviles */
+  }
+
+  .centro {
+    font-size: 16px; /* Reducimos el tamaño del texto del centro para móviles */
+  }
+
+  .caja {
+    width: 95%; /* Hacemos que las cajas sean casi del ancho completo */
+    padding: 15px; /* Reducimos el padding de las cajas en móviles */
+    margin: 8px auto; /* Ajustamos el margen vertical */
+  }
+
+   .img_servicios {
+    width: 150px; /* Reducimos más el tamaño de la imagen */
+    height: 150px;
+  }
+
+  .clinica {
+    font-size: 20px; /* Reducimos el tamaño del título de la caja para móviles */
+  }
+
+  .descrip {
+    font-size: 13px; /* Ajustamos si es necesario */
+  }
 }
