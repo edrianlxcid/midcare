@@ -5,9 +5,7 @@ $(document).ready(function () {
 
     // Recorre todos los enlaces o los elementos que se encuentran en la clase menu
     $('.menu a').each(function (index, elemento) {
-        // Le voy a desaparecer al menu con un nueva posicion vertical inicial
-        // NOTA: Para que la animación 'top' funcione, el elemento o su contenedor
-        // debe tener una propiedad CSS 'position' diferente a 'static' (por ejemplo, 'relative').
+
         $(this).css({
             'top': '-200px'
         });
@@ -37,11 +35,6 @@ $(document).ready(function () {
 
     // --- Lógica de Scroll (se ejecuta una vez al cargar la página para configurar los eventos) ---
 
-    // Creamos variables para obtener la posición vertical de cada sección.
-    // ES CRUCIAL que tengas en tu HTML elementos con los IDs:
-    // #inicio, #nosotros, #cita, #servicios, #contactanos
-    // Si no existen, offset().top devolverá 0 o un valor incorrecto.
-    // Se calculan aquí una sola vez cuando el DOM está listo.
     var inicioPos = $('#inicio').length ? $('#inicio').offset().top : 0; // Verifica si el elemento existe
     var nosotrosPos = $('#nosotros').length ? $('#nosotros').offset().top : 0;
     var citaPos = $('#cita').length ? $('#cita').offset().top : 0;
